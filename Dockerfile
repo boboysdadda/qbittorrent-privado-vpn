@@ -15,6 +15,6 @@ RUN \
 
 FROM linuxserver/qbittorrent
 
-RUN apt  update && apt install -y openvpn
+RUN apt update && apt install -y openvpn
 COPY --from=builder /defaults /defaults
 COPY root/ /
